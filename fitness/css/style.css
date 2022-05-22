@@ -211,7 +211,7 @@ section {
 }
 
 .home {
-    min-height: 0vh;
+    min-height: 80vh;
     display: flex;
     align-items: center;
     background-size: 55% 60%;
@@ -603,7 +603,7 @@ section {
         font-size: 55%;
     }
     .header {
-        padding: 1.5rem 2rem;
+        padding: 1.5rem 1rem;
     }
     section {
         padding: 2rem;
