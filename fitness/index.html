@@ -32,23 +32,27 @@
             <div class="fas fa-bars" id="menu-btn"></div>
         </div>
     </header>
+
+    <!-- espace entre header et slideshow -->
     <div class="headspace"></div>
+
+    <!-- slideshow -->
     <div class="slideshow-container">
         <div class="mySlides fade">
-            <div class="numbertext">1 / 3</div>
+            <div class="numbertext">1/3</div>
             <a href="#fitness">
                 <img src="../fitness/img/slide1.png" style="width: 100%" />
             </a>
         </div>
         <div class="mySlides fade">
-            <div class="numbertext">2 / 3</div>
+            <div class="numbertext">2/3</div>
             <a href="#spa">
                 <img src="../fitness/img/slide2.png" style="width: 100%" />
             </a>
             <div class="text"></div>
         </div>
         <div class="mySlides fade">
-            <div class="numbertext">3 / 3</div>
+            <div class="numbertext">3/3</div>
             <img src="../fitness/img/slide3.png" style="width: 100%" />
             <div class="text"></div>
         </div>
@@ -56,12 +60,14 @@
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
     <br />
-    <div style="text-align: center">
+    <!-- <div style="text-align: center">
         <span class="dot" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
+    </div> -->
+    <!-- end slideshow -->
 
+    <!-- section SPA -->
     <section class="home" id="spa">
         <div class="row">
             <div class="image">
@@ -79,7 +85,9 @@
             </div>
         </div>
     </section>
+    <!-- end section SPA -->
 
+    <!-- section Fitness -->
     <section class="home" id="fitness">
         <div class="row">
             <div class="image">
@@ -98,6 +106,7 @@
             </div>
         </div>
     </section>
+    <!-- end section Fitness -->
 
     <script src="js/script.js"></script>
     <script src="js/slide.js"></script>
