@@ -16,7 +16,7 @@ img {
 }
 
 .headspace {
-    min-height: 25vh;
+    min-height: 13vh;
     display: flex;
     align-items: center;
     background-size: 15% 5%;
