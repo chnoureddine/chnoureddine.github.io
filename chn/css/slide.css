@@ -1,0 +1,92 @@
+/* slide1 */
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    height: 90%;
+}
+
+.btncenter {
+    align-items: center;
+}
+
+.btnslide {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.9rem 3rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background: #1f76da;
+    cursor: pointer;
+}
+
+.btnslide:hover {
+    letter-spacing: 0.2rem;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+    height: calc(100vh - 139px);
+    z-index: 100;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* responsive */
+
+
+/* small */
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+
+/* medium */
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+
+/* large */
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
