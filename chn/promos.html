@@ -5,15 +5,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fitness</title>
+    <title>Promo</title>
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
 
     <!-- <link href="css/style.css" rel="stylesheet" /> -->
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/all.min.css" />
-    <link rel="stylesheet" href="css/slide.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/loader.css" />
+    <link rel="stylesheet" href="css/promos.css" />
 
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
@@ -28,8 +28,9 @@
         <!-- Header -->
         <header class="header">
             <div class="container">
-                <img class="logo" src="img/logo.png" alt="" />
-
+                <a href="index.html">
+                    <img class="logo" src="img/logo.png" alt="" />
+                </a>
                 <div class="links">
                     <span class="icon" id="navbar">
               <span></span>
@@ -47,25 +48,28 @@
             </div>
         </header>
         <!-- end Header -->
-        <!-- slideshow -->
-        <div class="slideshow-container">
-            <div class="mySlides fade">
-                <a href="#fitness">
-                    <img src="img/slide1.png" />
-                </a>
+
+        <!-- section SPA -->
+        <section class="home">
+            <div class="row">
+                <div class="image">
+                    <img src="img/promos/promo1.png" alt="" />
+                </div>
+                <div class="content">
+                    <h3>Deux prestations au choix</h3>
+                    <h4>Hammam + Soin de visage</h4>
+                    <ul>
+                        <li>Hammam oriental avec gommage savonnage</li>
+                        <li>
+                            Soin de visage « Nettoyage gommage extraction des points noirs et masque hydratant »
+                        </li>
+                    </ul>
+                    <a href="#" class="btn">Contacter</a>
+                </div>
             </div>
-            <div class="mySlides fade">
-                <a href="#spa">
-                    <img src="img/slide6.png" />
-                </a>
-            </div>
-            <div class="mySlides fade">
-                <a href="promos.html">
-                    <img src="img/promos/promoslide.png" />
-                </a>
-            </div>
-        </div>
-        <!-- end slideshow -->
+        </section>
+        <!-- end section SPA -->
+
         <!-- promos -->
         <div class="promos">
             <div class="card">
@@ -88,7 +92,7 @@
     </div>
 
     <div class="loader">
-        <img src="img/loader.gif" alt="" />
+        <img id="promogif" src="img/promos/promo.gif" alt="" />
     </div>
 
     <script src="js/loader.js"></script>

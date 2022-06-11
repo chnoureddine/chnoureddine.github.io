@@ -1,0 +1,64 @@
+.home {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    background-size: 55% 60%;
+    background-position: right center;
+}
+
+.home .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.home .row .image {
+    flex: 1 1 45rem;
+}
+
+.home .row .image img {
+    width: 100%;
+}
+
+.home .row .content {
+    flex: 1 1 45rem;
+    padding: 2rem;
+}
+
+.home .row .content h3 {
+    font-size: 3rem;
+    color: rgb(238, 42, 212);
+}
+
+.home .row .content p {
+    font-size: 1.6rem;
+    color: rgb(0, 0, 0);
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+.home .content {
+    max-width: 60rem;
+}
+
+.home .content h3 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: rgb(238, 42, 212);
+}
+
+.home .content p {
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: rgb(3, 0, 0);
+}
+
+section {
+    padding: 2rem 7%;
+}
+
+#promogif {
+    width: 15rem;
+}
