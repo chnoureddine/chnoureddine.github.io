@@ -195,7 +195,7 @@ body {
 
 /* small */
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .promos {
         flex-direction: column;
         align-items: center;
@@ -204,8 +204,8 @@ body {
         margin: 10px;
         border: 2px solid #00b0f0;
         float: left;
-        width: 400px;
-        height: 250px;
+        width: 350px;
+        height: 300px;
         box-shadow: 1px 2px 2px 2px rgb(106, 107, 114);
         justify-content: space-between;
         border-radius: 10px;
@@ -217,12 +217,11 @@ body {
 /* medium */
 
 
-/* 
-@media (min-width: 992px) {
+/* @media screen and (min-width: 992px) {
     .container {
         width: 970px;
     }
-}
+} */
 
 
 /* large */
