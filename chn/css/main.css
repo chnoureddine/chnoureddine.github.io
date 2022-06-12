@@ -162,11 +162,11 @@ img {
 }
 
 .promos .card {
-    margin: 10px;
+    margin: 40px;
     /* border: 6px solid #10cab7; */
     float: left;
-    width: 400px;
-    height: 300px;
+    width: 350px;
+    height: 280px;
     box-shadow: 1px 2px 2px 2px rgb(106, 107, 114);
     justify-content: space-between;
     border-radius: 10px;
@@ -206,11 +206,11 @@ img {
         align-items: center;
     }
     .promos .card {
-        margin: 10px;
+        margin: 20px;
         border: 2px solid #00b0f0;
         float: left;
-        width: 350px;
-        height: 300px;
+        width: 300px;
+        height: 250px;
         box-shadow: 1px 2px 2px 2px rgb(106, 107, 114);
         justify-content: space-between;
         border-radius: 10px;
