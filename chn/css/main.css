@@ -195,6 +195,35 @@ img {
 /* end promos */
 
 
+/* start footer */
+
+.footer {
+    background-color: #fbfdfd;
+    border: thick double #00b0f0;
+    border-radius: 10px;
+    color: rgb(4, 55, 107);
+    overflow: hidden;
+    padding: 20px 0;
+    display: none;
+    margin: 2px 2px;
+    position: fixed;
+}
+
+.footer .container {
+    padding-left: 5px;
+    margin-left: 30px;
+    margin-right: 5px;
+    display: block;
+}
+
+.footer .copyright {
+    float: right;
+}
+
+
+/* end footer */
+
+
 /* responsive */
 
 
@@ -218,6 +247,18 @@ img {
     }
     .home .row {
         flex-direction: column;
+    }
+    .home .row .content .card {
+        margin: 20px;
+        border: 2px solid #00b0f0;
+        width: 300px;
+        height: 100px;
+        float: left;
+        box-shadow: 1px 2px 2px 2px rgb(106, 107, 114);
+        justify-content: space-between;
+        border-radius: 10px;
+        opacity: 0.8;
+        align-items: center;
     }
 }
 

@@ -2,6 +2,98 @@
     padding: 2rem 7%;
 } */
 
+.headerpromos {
+    padding: 20px;
+    padding-left: 5px;
+    background-color: gold;
+}
+
+.headerpromos .container {
+    max-width: 1170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerpromos .logo {
+    width: 60px;
+    /* margin-left: 5%; */
+}
+
+.headerpromos .links {
+    position: absolute;
+    right: 7%;
+}
+
+.headerpromos .links .icon {
+    width: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.headerpromos .links .icon span {
+    background-color: #333;
+    margin-bottom: 5px;
+    height: 3px;
+}
+
+.headerpromos .links .icon span:first-child {
+    width: 100%;
+}
+
+.headerpromos .links .icon span:nth-child(2) {
+    width: 60%;
+    transition: 0.3s;
+}
+
+.headerpromos .links .icon span:last-child {
+    width: 100%;
+}
+
+.headerpromos .links:hover .icon span:nth-child(2) {
+    width: 100%;
+}
+
+.headerpromos .links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+    background-color: #f6f6f6;
+    position: absolute;
+    right: 0px;
+    min-width: 150px;
+    top: calc(100% + 15px);
+    display: none;
+    z-index: 1000;
+}
+
+.headerpromos .links ul::before {
+    content: "";
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #f6f6f6 transparent;
+    position: absolute;
+    right: 5px;
+    top: -20px;
+}
+
+.headerpromos .links ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    transition: 0.3s;
+}
+
+.headerpromos .links ul li a:hover {
+    padding-left: 25px;
+    color: rgb(242, 77, 204);
+    text-shadow: 2px 2px 4px #4b56ef;
+    text-transform: uppercase;
+}
+
 .home {
     min-height: 80vh;
     align-items: center;
@@ -10,8 +102,11 @@
 }
 
 .home .row {
+    margin-top: 5px;
     display: flex;
     align-items: center;
+    background-color: #063d71;
+    border-radius: 40px;
 }
 
 .home .row .image {
@@ -31,32 +126,43 @@
 }
 
 .home .row .content h3 {
-    font-size: 3rem;
+    font-size: 2rem;
     color: rgb(238, 42, 212);
+    margin-left: 40px;
 }
 
 .home .row .content h4 {
-    font-size: 2rem;
+    font-size: 14px;
     color: rgb(40, 146, 233);
 }
 
 .home .row .content p {
     font-size: 1.6rem;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     padding: 1rem 0;
     line-height: 1.8;
 }
 
 .home .row .content .card {
-    margin: 10px;
-    /* border: 6px solid #10cab7; */
-    float: left;
-    width: 400px;
-    height: 300px;
+    margin-bottom: 20px;
+    border: 2px solid rgb(118, 203, 236);
+    width: 360px;
+    height: 150px;
     box-shadow: 1px 2px 2px 2px rgb(106, 107, 114);
     justify-content: space-between;
     border-radius: 10px;
     opacity: 0.8;
+    align-items: center;
+}
+
+.home .row .content .card div {
+    font-size: 15px;
+    margin-top: 5px;
+    margin-left: 25px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    list-style-type: square;
+    color: rgb(255, 255, 255);
 }
 
 .home .content {
@@ -78,5 +184,5 @@
 }
 
 #promogif {
-    width: 25rem;
+    width: 18rem;
 }
