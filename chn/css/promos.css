@@ -2,96 +2,9 @@
     padding: 2rem 7%;
 } */
 
-.headerpromos {
+#headerpromos {
     padding: 20px;
     padding-left: 5px;
-    background-color: gold;
-}
-
-.headerpromos .container {
-    max-width: 1170px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.headerpromos .logo {
-    width: 60px;
-    /* margin-left: 5%; */
-}
-
-.headerpromos .links {
-    position: absolute;
-    right: 7%;
-}
-
-.headerpromos .links .icon {
-    width: 40px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-}
-
-.headerpromos .links .icon span {
-    background-color: #333;
-    margin-bottom: 5px;
-    height: 3px;
-}
-
-.headerpromos .links .icon span:first-child {
-    width: 100%;
-}
-
-.headerpromos .links .icon span:nth-child(2) {
-    width: 60%;
-    transition: 0.3s;
-}
-
-.headerpromos .links .icon span:last-child {
-    width: 100%;
-}
-
-.headerpromos .links:hover .icon span:nth-child(2) {
-    width: 100%;
-}
-
-.headerpromos .links ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    border-radius: 10px;
-    background-color: #f6f6f6;
-    position: absolute;
-    right: 0px;
-    min-width: 150px;
-    top: calc(100% + 15px);
-    display: none;
-    z-index: 1000;
-}
-
-.headerpromos .links ul::before {
-    content: "";
-    border-width: 10px;
-    border-style: solid;
-    border-color: transparent transparent #f6f6f6 transparent;
-    position: absolute;
-    right: 5px;
-    top: -20px;
-}
-
-.headerpromos .links ul li a {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    color: #333;
-    transition: 0.3s;
-}
-
-.headerpromos .links ul li a:hover {
-    padding-left: 25px;
-    color: rgb(242, 77, 204);
-    text-shadow: 2px 2px 4px #4b56ef;
-    text-transform: uppercase;
 }
 
 .home {
@@ -102,87 +15,76 @@
 }
 
 .home .row {
-    margin-top: 5px;
+    margin: 30px;
     display: flex;
     align-items: center;
-    background-color: #063d71;
     border-radius: 40px;
-}
-
-.home .row .image {
-    flex: 1 1 30rem;
-    float: left;
-}
-
-
-/* .home .row .image img {
-    width: 100%;
-} */
-
-.home .row .content {
-    flex: 1 1 30rem;
-    padding: 20px;
-    float: left;
-}
-
-.home .row .content h3 {
-    font-size: 2rem;
-    color: rgb(238, 42, 212);
-    margin-left: 40px;
-}
-
-.home .row .content h4 {
-    font-size: 14px;
-    color: rgb(40, 146, 233);
-}
-
-.home .row .content p {
-    font-size: 1.6rem;
-    color: rgb(255, 255, 255);
-    padding: 1rem 0;
-    line-height: 1.8;
-}
-
-.home .row .content .card {
-    margin-bottom: 20px;
-    border: 2px solid rgb(118, 203, 236);
-    width: 360px;
-    height: 150px;
-    box-shadow: 1px 2px 2px 2px rgb(106, 107, 114);
     justify-content: space-between;
-    border-radius: 10px;
-    opacity: 0.8;
-    align-items: center;
 }
 
-.home .row .content .card div {
-    font-size: 15px;
-    margin-top: 5px;
-    margin-left: 25px;
-    letter-spacing: 1px;
-    line-height: 1.5;
-    list-style-type: square;
-    color: rgb(255, 255, 255);
+.home img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10%;
+    height: auto;
 }
 
-.home .content {
-    max-width: 60rem;
+.home .card {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    max-height: 100%;
+    text-align: center;
+    font-family: arial;
+    float: left;
+    border: 1px solid gray;
+    align-content: space-between;
 }
 
-.home .content h3 {
-    font-size: 4rem;
-    text-transform: uppercase;
-    color: rgb(238, 42, 212);
+.home h2 {
+    font-size: large;
+    text-align: center;
+    margin: 3%;
+    padding: 2px;
+    border-bottom-left-radius: 70%;
+    border-top-right-radius: 70%;
+    /* border: 2px solid rgba(7, 130, 245, 0.788); */
+    background-color: black;
+    /* border-bottom: 2px solid rgba(245, 7, 225, 0.788); */
+    color: rgb(252, 250, 250);
+    font-family: "Nunito", sans-serif;
 }
 
-.home .content p {
-    font-size: 2rem;
-    font-weight: lighter;
-    line-height: 1.8;
-    padding: 1rem 0;
-    color: rgb(3, 0, 0);
+.home .title {
+    color: grey;
+    font-size: 18px;
+    margin-bottom: 5%;
 }
 
-#promogif {
-    width: 18rem;
+.home button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: rgba(14, 1, 12, 0.788);
+    /* border: 0 4px 8px 0 rgba(245, 7, 225, 0.788); */
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.home a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+
+.home button:hover,
+a:hover {
+    opacity: 0.7;
 }
