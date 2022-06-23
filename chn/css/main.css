@@ -327,6 +327,9 @@ img {
     .header .links ul li a {
         font-size: 10px;
     }
+    .header .links ul::before {
+        top: 6px;
+    }
     .promos {
         flex-direction: column;
         align-items: center;
