@@ -92,6 +92,7 @@ img {
     background-color: #333;
     margin-bottom: 5px;
     height: 3px;
+    cursor: pointer;
 }
 
 .header .links .icon span:first-child {
@@ -118,11 +119,12 @@ img {
     border-radius: 10px;
     background-color: #f6f6f6;
     position: absolute;
-    right: 0px;
-    min-width: 150px;
-    top: calc(100% + 15px);
+    right: 60px;
+    min-width: 350px;
+    top: -10px;
     display: none;
     z-index: 1000;
+    flex-wrap: nowrap;
 }
 
 .header .links ul::before {
@@ -131,12 +133,18 @@ img {
     border-style: solid;
     border-color: transparent transparent #f6f6f6 transparent;
     position: absolute;
-    right: 5px;
-    top: -20px;
+    right: -20px;
+    top: 10px;
+    transform: rotate(90deg);
+}
+
+.header .links ul li {
+    display: inline-block;
 }
 
 .header .links ul li a {
     display: block;
+    font-size: large;
     padding: 10px;
     text-decoration: none;
     color: #333;
@@ -313,6 +321,12 @@ img {
 /* small */
 
 @media (max-width: 768px) {
+    .header .links ul {
+        min-width: 230px;
+    }
+    .header .links ul li a {
+        font-size: 10px;
+    }
     .promos {
         flex-direction: column;
         align-items: center;
